@@ -1,30 +1,22 @@
 module.exports = {
-    "🤖 专家角色 (Agents)": {
-        "💻 开发组": [
-            "frontend-specialist",
-            "backend-specialist", 
-            "mobile-developer",
-            "game-developer"
-        ],
-        "🔧 架构与运维": [
-            "project-planner",
-            "database-architect",
-            "devops-engineer",
-            "orchestrator"
-        ],
-        "🛡️ 安全与质量": [
-            "security-auditor",
-            "penetration-tester", 
-            "test-engineer",
-            "debugger",
-            "performance-optimizer"
-        ],
-        "📚 文档与探索": [
-            "seo-specialist",
-            "documentation-writer",
-            "explorer-agent"
-        ]
-    },
+    "🤖 专家角色 (Agents)": [
+        "frontend-specialist",
+        "backend-specialist", 
+        "mobile-developer",
+        "game-developer",
+        "project-planner",
+        "database-architect",
+        "devops-engineer",
+        "orchestrator",
+        "security-auditor",
+        "penetration-tester", 
+        "test-engineer",
+        "debugger",
+        "performance-optimizer",
+        "seo-specialist",
+        "documentation-writer",
+        "explorer-agent"
+    ],
     "🧠 专业技能 (Skills)": {
         "🎨 前端与设计": [
             "frontend-design",
@@ -77,24 +69,21 @@ module.exports = {
             "behavioral-modes",
             "parallel-agents",
             "documentation-templates"
-        ]
-    },
-    "⚡ 快捷指令 (Workflows)": {
-        "🚀 常用": [
-            "/menu",
-            "/create",
-            "/debug",
-            "/plan",
-            "/ui-ux-pro-max"
         ],
-        "🛠️ 工具": [
-            "/brainstorm",
-            "/deploy",
-            "/enhance",
-            "/orchestrate",
-            "/preview",
-            "/status",
-            "/test"
-        ]
-    }
+        "📂 其他": []
+    },
+    "⚡ 快捷指令 (Workflows)": [
+        "/menu",
+        "/create",
+        "/debug",
+        "/plan",
+        "/ui-ux-pro-max",
+        "/brainstorm",
+        "/deploy",
+        "/enhance",
+        "/orchestrate",
+        "/preview",
+        "/status",
+        "/test"
+    ]
 };
