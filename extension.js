@@ -45,6 +45,20 @@ function activate(context) {
         // Initial update
         updateStatusBarTooltip();
 
+        // 自动检测版本更新并刷新配置
+        const currentVersion = vscode.extensions.getExtension('Antigravity.antigravity-menu').packageJSON.version;
+        const lastVersion = context.globalState.get('antigravity-menu.version');
+        if (currentVersion !== lastVersion) {
+            console.log(`Detected version change from ${lastVersion} to ${currentVersion}. Forcing metadata refresh...`);
+            try {
+                folderManager.generateDefaultConfig();
+                context.globalState.update('antigravity-menu.version', currentVersion);
+                console.log('✅ Metadata refresh successful.');
+            } catch (e) {
+                console.error('Failed to auto-refresh config:', e);
+            }
+        }
+
         // 2. 注册核心命令
         let disposable = vscode.commands.registerCommand('antigravity-menu.open', async (initialCategory) => {
             console.log('Command "antigravity-menu.open" triggered');

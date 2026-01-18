@@ -2,7 +2,7 @@
   "name": "antigravity-menu",
   "displayName": "AI指令集",
   "description": "Antigravity Agents, Skills, and Workflows.",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "publisher": "Antigravity",
   "engines": {
     "vscode": "^1.85.0"
