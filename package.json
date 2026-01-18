@@ -1,0 +1,31 @@
+{
+  "name": "antigravity-menu",
+  "displayName": "AI指令集",
+  "description": "Antigravity Agents, Skills, and Workflows.",
+  "version": "1.0.3",
+  "publisher": "Antigravity",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "antigravity-menu.open",
+        "title": "打开 AI 指令集",
+        "category": "Antigravity"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "antigravity-menu.open",
+        "key": "alt+x",
+        "mac": "cmd+shift+x",
+        "when": "true"
+      }
+    ]
+  }
+}
